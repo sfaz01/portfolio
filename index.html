@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mohd Sarfaraz</title>
+  <meta name="description" content="Mohd Sarfaraz builds websites, web apps and AI features. Open to internships and freelance projects." />
+  <meta name="theme-color" content="#0c1820" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Mohd Sarfaraz" />
+  <meta property="og:description" content="I build websites, web apps and AI features. Open to internships and freelance projects." />
+  <meta property="og:image" content="https://sfaz01.github.io/portfolio/assets/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#shell">Skip to content</a>
+
+  <header class="topbar">
+    <a class="mark" href="#top" aria-label="Back to top">
+      <svg viewBox="0 0 40 40" aria-hidden="true">
+        <g class="mark-grid"><circle cx="8" cy="4" r="1.4"/><circle cx="16" cy="4" r="1.4"/><circle cx="24" cy="4" r="1.4"/><circle cx="8" cy="12" r="1.4"/><circle cx="24" cy="12" r="1.4"/><circle cx="32" cy="12" r="1.4"/><circle cx="8" cy="20" r="1.4"/><circle cx="16" cy="20" r="1.4"/><circle cx="24" cy="20" r="1.4"/><circle cx="16" cy="28" r="1.4"/><circle cx="24" cy="28" r="1.4"/><circle cx="32" cy="28" r="1.4"/><circle cx="8" cy="36" r="1.4"/><circle cx="16" cy="36" r="1.4"/><circle cx="32" cy="36" r="1.4"/></g>
+        <path class="mark-path" pathLength="1" d="M32 4 L16 12 L32 20 L24 36 L8 28" />
+        <circle class="mark-start" cx="32" cy="4" r="3.2" />
+        <circle class="mark-stop" cx="16" cy="12" r="2.4" /><circle class="mark-stop" cx="32" cy="20" r="2.4" /><circle class="mark-stop" cx="24" cy="36" r="2.4" />
+        <circle class="mark-end" cx="8" cy="28" r="3.4" />
+      </svg>
+      <span>Sarfaraz</span>
+    </a>
+    <div class="topbar-actions">
+      <button class="kbd-hint" type="button" data-focus-shell>Press <kbd>/</kbd> to talk to the terminal</button>
+      <a class="btn btn-solid" href="assets/Mohd_Sarfaraz_Resume.pdf" download>Download resume</a>
+    </div>
+  </header>
+
+  <nav class="altimeter" aria-label="Sections">
+    <div class="alt-track" aria-hidden="true"><span class="alt-marker"></span></div>
+    <ol>
+      <li><a href="#top" data-alt="8848"><span>Summit</span></a></li>
+      <li><a href="#shell" data-alt="6100"><span>Terminal</span></a></li>
+      <li><a href="#projects" data-alt="4300"><span>Projects</span></a></li>
+      <li><a href="#work" data-alt="3100"><span>Work</span></a></li>
+      <li><a href="#stack" data-alt="2200"><span>Stack</span></a></li>
+      <li><a href="#hire" data-alt="1800"><span>Work with me</span></a></li>
+      <li><a href="#chess" data-alt="1500"><span>Chess</span></a></li>
+      <li><a href="#music" data-alt="900"><span>Music</span></a></li>
+      <li><a href="#films" data-alt="400"><span>Films</span></a></li>
+      <li><a href="#contact" data-alt="0"><span>Sea level</span></a></li>
+    </ol>
+  </nav>
+
+  <main>
+    <!-- HERO: live contour map -->
+    <section id="top" class="hero" aria-label="Introduction">
+      <canvas id="terrain" aria-hidden="true"></canvas>
+      <div class="probe" id="probe" aria-hidden="true">
+        <span class="probe-dot"></span>
+        <span class="probe-text"><b id="probe-elev">0</b> m<br /><span id="probe-coord"></span></span>
+      </div>
+      <div class="hero-inner">
+        <p class="hero-hello">Hi, I'm</p>
+        <h1 class="hero-name" aria-label="Mohd Sarfaraz">
+          <span class="line">Mohd</span>
+          <span class="line">Sarfaraz</span>
+        </h1>
+        <p class="hero-tag" id="hero-tag"></p>
+        <div class="hero-actions">
+          <a class="btn btn-solid" href="#projects">See what I've built</a>
+          <a class="btn btn-ghost" href="#hire">Start a project</a>
+        </div>
+        <a class="lc" id="lc" href="https://leetcode.com/u/sfaz_01" target="_blank" rel="noopener">
+          <svg class="lc-ring" viewBox="0 0 44 44" aria-hidden="true">
+            <circle class="lc-track" cx="22" cy="22" r="18" />
+            <circle class="lc-arc lc-easy" cx="22" cy="22" r="18" />
+            <circle class="lc-arc lc-medium" cx="22" cy="22" r="18" />
+            <circle class="lc-arc lc-hard" cx="22" cy="22" r="18" />
+          </svg>
+          <span class="lc-text">
+            <span class="lc-main"><b id="lc-total">0</b> LeetCode problems solved</span>
+            <span class="lc-split" id="lc-split"></span>
+          </span>
+        </a>
+      </div>
+      <p class="hero-hint" aria-hidden="true">Move your cursor to stir the current. Click to send a shockwave.</p>
+    </section>
+
+    <!-- TERMINAL -->
+    <section id="shell" class="section shell-section">
+      <div class="section-head">
+        <h2>Talk to my terminal</h2>
+        <p>It works like OmniShell, the agent I built at the AI Skills Lab. Type a command, or just ask in plain English, like <em>what have you built?</em> or <em>do you play chess?</em></p>
+      </div>
+      <div class="terminal" id="terminal">
+        <div class="term-bar">
+          <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="term-title">omnishell — sarfaraz@kiet</span>
+          <span class="term-status" id="term-status">ready</span>
+        </div>
+        <div class="term-body" id="term-body" role="log" aria-live="polite" data-lenis-prevent></div>
+        <form class="term-input" id="term-form" autocomplete="off">
+          <label for="term-in" class="prompt">sarfaraz@kiet:~$</label>
+          <input id="term-in" type="text" spellcheck="false" placeholder="try: help" aria-label="Terminal input" />
+        </form>
+        <div class="term-chips" id="term-chips"></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section chapter">
+      <div class="section-head">
+        <h2>Things I've built</h2>
+        <p>Each one has a small live demo. Play with them.</p>
+      </div>
+      <div class="projects" id="project-list"></div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="section work">
+      <div class="section-head">
+        <h2>Where I work</h2>
+      </div>
+      <ol class="timeline" id="timeline"></ol>
+    </section>
+
+    <!-- STACK -->
+    <section id="stack" class="section">
+      <div class="section-head">
+        <h2>The stack</h2>
+        <p>Hover or tap a skill to see which projects use it.</p>
+      </div>
+      <div class="stack">
+        <div class="skills" id="skills"></div>
+        <aside class="stack-side">
+          <ul class="stack-projects" id="stack-projects"></ul>
+          <ul class="creds" id="creds"></ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- FREELANCE -->
+    <section id="hire" class="section hire chapter">
+      <div class="section-head">
+        <h2>Work with me</h2>
+        <p>Besides internships, I take on freelance work. If you have something you want built, whether it's a site, an app or an AI feature, I'll build it end to end and hand it over ready to use.</p>
+      </div>
+      <ul class="services" id="services"></ul>
+
+      <h3 class="hire-sub">How it works</h3>
+      <ol class="steps" id="steps"></ol>
+
+      <div class="brief-wrap">
+        <div class="brief-intro">
+          <h3 class="hire-sub">Start a project</h3>
+          <p id="brief-how">Fill this in and it opens your email app with a ready-to-send brief. I'll reply with questions or a plan.</p>
+          <p class="brief-alt">Prefer to write it yourself? Email <a id="hire-email"></a>.</p>
+        </div>
+        <form class="brief" id="brief" novalidate>
+          <fieldset class="brief-field">
+            <legend>What do you need?</legend>
+            <div class="chips" id="brief-types"></div>
+          </fieldset>
+          <label class="brief-field">
+            <span>Your name</span>
+            <input name="name" type="text" autocomplete="name" placeholder="Jane from Crumb Bakery" />
+          </label>
+          <label class="brief-field" id="brief-email-field" hidden>
+            <span>Your email, so I can reply</span>
+            <input name="email" type="email" autocomplete="email" placeholder="jane@crumbbakery.com" />
+          </label>
+          <input type="checkbox" name="botcheck" class="brief-trap" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <label class="brief-field">
+            <span>Tell me about it</span>
+            <textarea name="about" rows="5" placeholder="What it should do, who it's for, and any sites you like the look of."></textarea>
+          </label>
+          <label class="brief-field">
+            <span>Timeline</span>
+            <select name="timeline" id="brief-timeline"></select>
+          </label>
+          <div class="brief-actions">
+            <button class="btn btn-solid" type="submit" id="brief-send">Email this brief</button>
+            <p class="brief-msg" id="brief-msg" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- CHESS -->
+    <section id="chess" class="section">
+      <div class="chess">
+        <div class="chess-board-wrap">
+          <div class="player" id="player-top"></div>
+          <div class="board" id="board" role="img" aria-label="Chess board"></div>
+          <div class="player" id="player-bottom"></div>
+          <div class="replay">
+            <div class="replay-btns">
+              <button class="rb" type="button" id="rp-first" aria-label="First move"><svg viewBox="0 0 24 24"><path d="M6 5v14M19 5l-9 7 9 7z"/></svg></button>
+              <button class="rb" type="button" id="rp-prev" aria-label="Previous move"><svg viewBox="0 0 24 24"><path d="M16 5l-9 7 9 7z"/></svg></button>
+              <button class="rb rb-play" type="button" id="rp-play" aria-label="Pause"><svg viewBox="0 0 24 24"><path class="ic-pause" d="M8 5v14M16 5v14"/><path class="ic-play" d="M7 5l12 7-12 7z"/></svg></button>
+              <button class="rb" type="button" id="rp-next" aria-label="Next move"><svg viewBox="0 0 24 24"><path d="M8 5l9 7-9 7z"/></svg></button>
+              <button class="rb" type="button" id="rp-last" aria-label="Last move"><svg viewBox="0 0 24 24"><path d="M18 5v14M5 5l9 7-9 7z"/></svg></button>
+            </div>
+            <input class="scrub" id="rp-scrub" type="range" min="0" max="0" value="0" aria-label="Move" />
+            <p class="move-label" id="rp-label" aria-live="polite"></p>
+          </div>
+        </div>
+        <div class="chess-side">
+          <h2 class="room-title">Off the clock, I play chess.</h2>
+          <p>Chess is how I switch off. On the left is my latest game, replayed move by move as it happened. Let it play, or scrub through it yourself.</p>
+          <dl class="game-facts" id="game-facts"></dl>
+          <div class="ratings" id="ratings"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MUSIC: listening room -->
+    <section id="music" class="room listening" aria-label="Music I listen to">
+      <div class="room-bg" aria-hidden="true"><img id="music-bg" alt="" /><img id="music-bg-next" alt="" /></div>
+      <div class="room-inner">
+        <header class="room-head">
+          <h2 class="room-title">The listening room</h2>
+          <p>Pick a record from the crate. It goes on the turntable, and you can play it right here.</p>
+        </header>
+        <div class="deck">
+          <div class="turntable" id="turntable">
+            <div class="plinth">
+              <div class="platter">
+                <div class="disc" id="disc">
+                  <div class="disc-label"><img id="disc-img" alt="" /></div>
+                </div>
+              </div>
+              <div class="tonearm" aria-hidden="true"><span class="pivot"></span><span class="arm"><span class="head"></span></span></div>
+              <button class="power" id="power" type="button" aria-pressed="false" aria-label="Start the record"></button>
+              <div class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+          </div>
+          <div class="now-playing">
+            <p class="np-genre" id="np-genre"></p>
+            <h3 class="np-name" id="np-name"></h3>
+            <p class="np-record">Start with <b id="np-record"></b> <span id="np-year"></span></p>
+            <div class="np-actions">
+              <button class="btn btn-solid" type="button" id="np-play">Play here</button>
+              <a class="btn btn-ghost" id="np-open" target="_blank" rel="noopener">Open in Spotify</a>
+            </div>
+            <div class="np-embed" id="np-embed"></div>
+          </div>
+        </div>
+        <div class="crate" id="crate" role="listbox" aria-label="Artists"></div>
+      </div>
+    </section>
+
+    <!-- FILMS: screening room -->
+    <section id="films" class="room screening" aria-label="Favourite films">
+      <div class="screen-glow" id="screen-glow" aria-hidden="true"></div>
+      <div class="beam" aria-hidden="true"></div>
+      <canvas class="dust" id="dust" aria-hidden="true"></canvas>
+      <div class="room-inner">
+        <header class="room-head">
+          <h2 class="room-title">Now showing: my four favourites</h2>
+          <p>The films I'd rewatch tonight. Hover to light up the room, click to open on Letterboxd.</p>
+          <a class="lb-link" id="lb-link" target="_blank" rel="noopener" hidden><span class="lb-dots" aria-hidden="true"><i></i><i></i><i></i></span>My Letterboxd profile</a>
+        </header>
+        <ol class="reel" id="reel"></ol>
+      </div>
+      <div class="grain" aria-hidden="true"></div>
+    </section>
+
+    <!-- CONTACT: sea level -->
+    <section id="contact" class="contact">
+      <canvas id="sea" aria-hidden="true"></canvas>
+      <div class="contact-inner">
+        <p class="sea-mark">0 m. You've reached sea level.</p>
+        <h2 class="contact-big">Let's build something.</h2>
+        <p class="contact-sub">I'm open to software engineering, AI/ML and full-stack internships, and to freelance projects. The fastest way to reach me is email.</p>
+        <div class="contact-row">
+          <button class="email" type="button" id="copy-email">
+            <span id="email-text"></span>
+            <span class="email-hint" id="email-hint">Copy</span>
+          </button>
+        </div>
+        <ul class="socials">
+          <li><a href="https://github.com/sfaz01" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://linkedin.com/in/sfaz01" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://leetcode.com/u/sfaz_01" target="_blank" rel="noopener">LeetCode</a></li>
+          <li><a href="assets/Mohd_Sarfaraz_Resume.pdf" download>Resume (PDF)</a></li>
+          <li><a href="#hire">Start a project</a></li>
+        </ul>
+        <div class="now">
+          <h3>Right now</h3>
+          <dl class="now-grid" id="now-grid"></dl>
+        </div>
+        <footer class="foot">
+          <span>Ghaziabad, India. 28.67° N, 77.45° E.</span>
+          <span>Hand-built, no frameworks.</span>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/analytics.js"></script>
+  <script src="js/noise.js"></script>
+  <script src="js/hero-flow.js"></script>
+  <!-- other hero backgrounds: swap the line above for js/terrain-flyover.js (3D ridgelines) or js/terrain.js (contour map) -->
+  <script src="js/terminal.js"></script>
+  <script src="js/sections.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+  <script src="js/chessgame.js"></script>
+  <script src="js/rooms.js"></script>
+  <script src="js/hire.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/transitions.js"></script>
+</body>
+</html>
